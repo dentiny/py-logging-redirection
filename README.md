@@ -1,2 +1,3 @@
 # py-logging-redirection
-Util on python logging redirection.
+
+For distributed computing frameworks, logging redirection is a common requirement, which streams stdout/stderr from application to local / remote storage.
