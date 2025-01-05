@@ -125,6 +125,7 @@ def open_pipe_with_rotation(
 
     def cleanup():
         pipe_write_stream.write(_EOF_TOKEN)
+        pipe_write_stream.flush()
         pipe_write_stream.close()
 
         # Synchronize to make sure everything flushed.
